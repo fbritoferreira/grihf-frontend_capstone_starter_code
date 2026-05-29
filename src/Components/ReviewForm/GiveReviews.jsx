@@ -8,6 +8,7 @@ function GiveReviews() {
   const [showForm, setShowForm] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
   const [formData, setFormData] = useState({ name: '', review: '', rating: 0 });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleButtonClick = () => {
     setShowForm(true);
@@ -26,6 +27,7 @@ function GiveReviews() {
 
     if (formData.name && formData.review && formData.rating > 0) {
       setShowWarning(false);
+      setSubmitted(true);
     } else {
       setShowWarning(true);
     }
@@ -53,7 +55,7 @@ function GiveReviews() {
 
   return (
     <div>
-      <Button variant="primary" /*disabled size='sm'*/ onClick={handleButtonClick}>Click Here</Button>
+      <Button variant="primary" disabled={submitted} onClick={handleButtonClick}>{submitted ? 'Review Submitted' : 'Click Here'}</Button>
 
       <Popup
         style={{ backgroundColor: "#FFFFFF" }}
