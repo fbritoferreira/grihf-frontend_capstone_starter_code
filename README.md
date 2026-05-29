@@ -1,8 +1,8 @@
-# StayHealthy
+# Medical Appointment Booking
 
-Capstone project for the IBM Front-End Development Professional Certificate on Coursera.
+Capstone project for the IBM Front-End Development Professional Certificate on Coursera. Repository: `grihf-frontend_capstone_starter_code`.
 
-StayHealthy is a React-based healthcare appointment platform that lets users find doctors, book instant or scheduled consultations, read health blog posts, leave reviews, and manage their profile. It was built across the modules of the front-end capstone and uses an Express + MongoDB backend for authentication.
+Medical Appointment Booking is a React-based healthcare appointment platform that lets users find doctors, book instant or scheduled consultations, read health blog posts, leave reviews, and manage their profile. It was built across the modules of the front-end capstone and uses an Express + MongoDB backend for authentication.
 
 ## Tech Stack
 
